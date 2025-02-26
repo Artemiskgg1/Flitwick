@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Flitwick](https://socialify.git.ci/Artemiskgg1/Flitwick/image?description=1&language=1&name=1&owner=1&pattern=Solid&theme=Dark)
 
-## Getting Started
+Flitwick is a **Trello-inspired task management application** built using **Next.js, Prisma, PostgreSQL, and Clerk for authentication**. It allows users to create boards, lists, and tasks, helping them organize work efficiently.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Authentication** (Powered by Clerk)
+- **Create, Update, and Delete Boards**
+- **Drag and Drop Lists & Tasks**
+- **Persistent Data Storage** (PostgreSQL with Prisma)
+- **Real-time Updates**
+- **Dark Mode Support** (using `next-themes`)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js, Tailwind CSS, Framer Motion (for animations)
+- **Backend:** Next.js API Routes, Prisma ORM
+- **Database:** PostgreSQL (Hosted on Neon Console)
+- **Authentication:** Clerk
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📦 Installation & Setup
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   git clone https://github.com/Artemiskgg1/Flitwick.git
+   cd flitwick
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```sh
+   npm install  # or yarn install
+   ```
 
-## Deploy on Vercel
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```env
+   DATABASE_URL=your_postgresql_connection_url
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_frontend_api
+   CLERK_SECRET_KEY=your_clerk_api_key
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_OUT_URL=/
+   NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=unsplash_api_key
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Run database migrations:
+
+   ```sh
+   npx prisma migrate dev
+   ```
+
+5. Start the development server:
+   ```sh
+   npm run dev  # or yarn dev
+   ```
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+## ✨ Acknowledgments
+
+- Inspired by Trello & [Code with Antonio](https://youtu.be/pRybm9lXW2c?si=t3NbY05NYIOOTP0F)
+- Built with 💙 by [Abha Ghildiyal](https://github.com/yourusername)
