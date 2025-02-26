@@ -3,7 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { BoardNavbar } from "./_components/board-navbar";
 
-export async function generateMetaData({
+export async function generateMetadata({
   params,
 }: {
   params: { boardId: string };
