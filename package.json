@@ -9,7 +9,8 @@
     "lint": "next lint",
     "generate": "drizzle-kit generate:pg",
     "push": "drizzle-kit push:pg",
-    "studio": "drizzle-kit studio"
+    "studio": "drizzle-kit studio",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.12",
