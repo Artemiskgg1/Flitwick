@@ -65,4 +65,4 @@ This project is licensed under the MIT License.
 ## ✨ Acknowledgments
 
 - Inspired by Trello & [Code with Antonio](https://youtu.be/pRybm9lXW2c?si=t3NbY05NYIOOTP0F)
-- Built with 💙 by [Abha Ghildiyal](https://github.com/yourusername)
+- Built with 💙 by [Abha Ghildiyal](https://github.com/artemiskgg1)
